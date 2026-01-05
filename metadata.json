@@ -1,0 +1,8 @@
+{
+  "name": "Advanced Women's Health - Ginecología de Precisión",
+  "description": "Clínica especializada en ginecología estética y menopausia liderada por la Dra. Candela Fernández. Innovación y precisión para la salud integral femenina.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
