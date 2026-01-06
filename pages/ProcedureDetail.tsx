@@ -6,6 +6,7 @@ import { PROCEDURES } from '../constants';
 const ProcedureDetail: React.FC = () => {
   const { id } = useParams<{ id: string }>();
   const procedure = PROCEDURES.find(p => p.id === id);
+  const WHATSAPP_URL = "https://wa.link/u8hybz";
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -54,9 +55,14 @@ const ProcedureDetail: React.FC = () => {
               ))}
             </ul>
 
-            <button className="w-full bg-awh-brown-dark text-awh-cream py-6 rounded-lg text-sm font-bold tracking-[0.3em] uppercase hover:bg-awh-brown-mid transition-all shadow-2xl shadow-awh-brown-dark/20">
+            <a 
+              href={WHATSAPP_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block w-full text-center bg-awh-brown-dark text-awh-cream py-6 rounded-lg text-sm font-bold tracking-[0.3em] uppercase hover:bg-awh-brown-mid transition-all shadow-2xl shadow-awh-brown-dark/20"
+            >
               Solicitar Evaluación de Precisión
-            </button>
+            </a>
           </div>
         </div>
       </div>

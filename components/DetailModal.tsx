@@ -14,6 +14,7 @@ const DetailModal: React.FC<DetailModalProps> = ({ item, type, onClose }) => {
   const isProduct = type === 'product' && 'price' in item;
   const product = item as Product;
   const procedure = item as Procedure;
+  const WHATSAPP_URL = "https://wa.link/u8hybz";
 
   const handlePayment = () => {
     alert("Redirigiendo a nuestra pasarela de pago segura de Advanced Women's Health...");
@@ -126,7 +127,9 @@ const DetailModal: React.FC<DetailModalProps> = ({ item, type, onClose }) => {
                 </button>
               ) : (
                 <a 
-                  href="https://wa.me/123456789" 
+                  href={WHATSAPP_URL} 
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="block w-full text-center bg-awh-brown-dark text-white py-5 rounded-lg text-xs font-bold uppercase tracking-[0.3em] hover:bg-awh-rose transition-all shadow-xl"
                 >
                   Agendar Evaluación

@@ -3,6 +3,8 @@ import React, { useEffect } from 'react';
 import { DOCTOR_BIO } from '../constants';
 
 const Biography: React.FC = () => {
+  const WHATSAPP_URL = "https://wa.link/u8hybz";
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -74,7 +76,9 @@ const Biography: React.FC = () => {
 
         <div className="text-center">
             <a 
-              href="https://wa.me/123456789" 
+              href={WHATSAPP_URL} 
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-block bg-awh-brown-dark text-white px-16 py-6 rounded-full font-bold hover:bg-awh-rose transition-all shadow-2xl text-xs tracking-[0.3em] uppercase"
             >
               Agendar una Consulta Privada

@@ -1,7 +1,6 @@
 
-import { Procedure, Product, Location, Resource } from './types';
+import { Procedure, Product, Location, Resource, TransitionSpecialist } from './types';
 
-// Usamos un proxy (images.weserv.nl) para asegurar que la imagen de ImgBB se muestre correctamente
 const PROXY = "https://images.weserv.nl/?url=";
 const RAW_IMAGE_URL = "i.ibb.co/CK1PBBFC/8c843f03-8781-4906-b5d6-9f24a1ae5b48-2.jpg";
 
@@ -18,6 +17,27 @@ export const DOCTOR_BIO = {
   ],
   image: `${PROXY}${RAW_IMAGE_URL}`
 };
+
+export const TRANSITION_SPECIALISTS: TransitionSpecialist[] = [
+  {
+    name: "Dr. Julián Arcas",
+    role: "Dermatólogo",
+    specialty: "Salud cutánea en la madurez",
+    image: "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?q=80&w=400"
+  },
+  {
+    name: "Lic. Elena Soler",
+    role: "Psicóloga Clínica",
+    specialty: "Gestión emocional y plenitud",
+    image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=400"
+  },
+  {
+    name: "Nut. Sofía García",
+    role: "Nutricionista",
+    specialty: "Nutrición antiinflamatoria",
+    image: "https://images.unsplash.com/photo-1594824476967-48c8b964273f?q=80&w=400"
+  }
+];
 
 export const PROCEDURES: Procedure[] = [
   {
@@ -81,18 +101,46 @@ export const PRODUCTS: Product[] = [
 
 export const LOCATIONS: Location[] = [
   {
-    name: 'Advanced Women\'s Health - Central',
-    address: 'Calle Velázquez 42, 28001 Madrid',
-    phone: '+34 910 888 777',
-    hours: 'Lun - Vie: 09:00 - 19:00',
-    mapLink: 'https://maps.google.com'
+    name: 'Clínica AB - Unidad de Menopausia',
+    address: 'Av. Cabildo 1478, 9° Dpto 50, C1426ABO CABA',
+    phone: '+54 9 11 3915-0030',
+    hours: 'Consulta por horarios disponibles',
+    mapLink: 'https://www.google.com/maps/search/?api=1&query=Av.+Cabildo+1478+Buenos+Aires'
   },
   {
-    name: 'Unidad de Menopausia - Clínica Corachan',
-    address: 'Carrer de Buïgas 19, 08017 Barcelona',
-    phone: '+34 932 545 800',
-    hours: 'Jueves: 15:00 - 20:00',
-    mapLink: 'https://maps.google.com'
+    name: 'Juvian',
+    address: 'Av. Boyacá 326, C1406 CABA',
+    phone: '+54 9 11 3672-4900',
+    hours: 'Consulta por horarios disponibles',
+    mapLink: 'https://maps.app.goo.gl/V9UQvc8JEBX45Xym6'
+  },
+  {
+    name: 'IDIM',
+    address: 'Amenábar 1945, C1428CQC CABA',
+    phone: '+54 9 11 5031-4100',
+    hours: 'Consulta por horarios disponibles',
+    mapLink: 'https://maps.app.goo.gl/sJ8YQK1nu7E3MRgQ9'
+  },
+  {
+    name: 'Mautalen',
+    address: 'Azcuénaga 1860 6º Piso, C1128 AAF, CABA',
+    phone: '+54 9 11 4806-8788',
+    hours: 'Consulta por horarios disponibles',
+    mapLink: 'https://maps.app.goo.gl/d4dmk2niwgYBvnm88'
+  },
+  {
+    name: 'Consultorio Montevideo',
+    address: 'Luis Lamas 3496, 11300 Montevideo, Uruguay',
+    phone: 'Cita previa por WhatsApp',
+    hours: 'Atención Mensual',
+    mapLink: 'https://maps.app.goo.gl/Ma4o4n2wp63gG4a7A'
+  },
+  {
+    name: 'Consultorio Punta del Este',
+    address: 'Av. Martiniano Chiossi entre Luxemburgo y Tahilandia, 20000 Punta del Este',
+    phone: 'Cita previa por WhatsApp',
+    hours: 'Atención Estacional',
+    mapLink: 'https://maps.app.goo.gl/uZVCk37oyY5fhWyJ7'
   }
 ];
 

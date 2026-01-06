@@ -34,3 +34,10 @@ export interface Resource {
   icon: string;
   downloadUrl: string;
 }
+
+export interface TransitionSpecialist {
+  name: string;
+  role: string;
+  specialty: string;
+  image: string;
+}

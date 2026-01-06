@@ -53,12 +53,18 @@ const Hero: React.FC = () => {
           Innovación médica y trato humano en cada consulta.
         </p>
         
-        <div className="flex justify-center">
+        <div className="flex flex-col sm:flex-row justify-center gap-6">
           <Link 
             to="/biografia" 
-            className="bg-white text-awh-brown-dark px-12 py-5 rounded-full font-bold hover:bg-awh-rose hover:text-white transition-all shadow-2xl text-[10px] tracking-[0.4em] uppercase transform hover:scale-105 active:scale-95"
+            className="bg-white text-awh-brown-dark px-10 py-5 rounded-full font-bold hover:bg-awh-rose hover:text-white transition-all shadow-2xl text-[10px] tracking-[0.4em] uppercase transform hover:scale-105 active:scale-95 whitespace-nowrap"
           >
             Conoce mi historia
+          </Link>
+          <Link 
+            to="/transition" 
+            className="bg-awh-rose text-white px-10 py-5 rounded-full font-bold hover:bg-white hover:text-awh-brown-dark transition-all shadow-2xl text-[10px] tracking-[0.4em] uppercase transform hover:scale-105 active:scale-95 whitespace-nowrap"
+          >
+            Plan Transition
           </Link>
         </div>
       </div>

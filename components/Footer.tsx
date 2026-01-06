@@ -2,6 +2,8 @@
 import React from 'react';
 
 const Footer: React.FC = () => {
+  const WHATSAPP_URL = "https://wa.link/u8hybz";
+  
   return (
     <footer className="bg-awh-brown-dark py-32 text-awh-cream">
       <div className="max-w-7xl mx-auto px-6">
@@ -32,10 +34,10 @@ const Footer: React.FC = () => {
           <div>
             <h4 className="font-bold mb-10 uppercase tracking-[0.2em] text-[11px] text-awh-blue border-b border-awh-blue/30 pb-2 inline-block">Consultas</h4>
             <ul className="space-y-6 text-sm text-awh-taupe">
-              <li><a href="#" className="hover:text-awh-rose transition-colors">Agendar por WhatsApp</a></li>
-              <li><a href="#" className="hover:text-awh-rose transition-colors">Segunda Opinión</a></li>
+              <li><a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="hover:text-awh-rose transition-colors">Agendar por WhatsApp</a></li>
+              <li><a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="hover:text-awh-rose transition-colors">Segunda Opinión</a></li>
               <li><a href="#" className="hover:text-awh-rose transition-colors">Política de Privacidad</a></li>
-              <li><a href="#" className="hover:text-awh-rose transition-colors">Contacto Urgente</a></li>
+              <li><a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" className="hover:text-awh-rose transition-colors">Contacto Urgente</a></li>
             </ul>
           </div>
         </div>

@@ -22,7 +22,7 @@ const Procedures: React.FC = () => {
           <div 
             key={proc.id} 
             onClick={() => setSelectedProc(proc)}
-            className="group flex flex-col bg-white border border-awh-brown-dark/10 rounded-lg overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 cursor-pointer"
+            className="group flex flex-col bg-awh-blue/40 backdrop-blur-sm border border-awh-blue/60 rounded-lg overflow-hidden hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 cursor-pointer"
           >
             <div className="block overflow-hidden relative h-72">
               <img 
